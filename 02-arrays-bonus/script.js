@@ -35,4 +35,17 @@ const isFabioPresent = temp;
 console.log(`4) isFabioPresent: ${isFabioPresent}`);
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
-const teachersString = null;
+temp = "";
+for (let i = 0; i < teachers.length; i++) {
+  temp += teachers[i];
+  if (i + 1 !== teachers.length) {
+    temp += ",";
+  }
+}
+const teachersString = temp;
+
+//* Metodo alternativo, più veloce:
+/* const teachersString = `${teachers}`; */
+//************************************** */
+
+console.log(`5) teachersString: ${teachersString}`);
